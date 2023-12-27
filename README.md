@@ -1,5 +1,3 @@
-// Css:
-
 /* CSS Register page*/
 
 .wrapper{
@@ -30,22 +28,19 @@
 .register-side-image img{
     width: 100px;
     position: absolute;
-    top: -200px;
-    left: -60px;
+    top: -20px;
+    left: 0px;
 }
 .text{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 15%;
+    left: 40%;
     transform: translate(-50%,-50%);
 }
 .text p{
+    font-weight:600;
     color: #fff;
     font-size:20px;
-}
-.text i{
-    font-weight:400;
-    font-size : 20px;
 }
 .right{
     display: flex;
@@ -126,12 +121,36 @@ span a {
     color: #3BC3FF;
     transition:.5s;
 }
-    span a:hover {
-        text-decoration: underline;
-        color: #3BC3FF;
+span a:hover {
+    text-decoration: underline;
+    color: #3BC3FF;
+}
+
+@media only screen and (max-width:768px){
+    .register-side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    .register-side-image img{
+        width: 35px;
+        position: absolute;
+        top:-10px;
+        left: 40%;
     }
 
-
+    .text{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        text-align:center;
+    }
+    .text p{
+        font-size: 12px;
+    }
+    .row{
+        max-width: 420px;
+        width:100%;
+    }
+}
 ---------------------------
 @layout EmtyLayout
 
@@ -142,7 +161,7 @@ span a {
         <div class="col-md-6 register-side-image">
             <div class="text">
                 <img class="register-image" src="/images/logo_cyllenge_cl.svg" alt="img"/>
-                <p>Create account chat<i> - Plott</i></p>
+               <p>Realtime Chat App Demo</p>
             </div>
         </div>
         <div class="col-md-6 right">
